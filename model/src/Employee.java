@@ -60,4 +60,16 @@ public abstract class Employee {
     public void setId(String id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", role='" + role + '\'' +
+                ", email='" + email + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }
