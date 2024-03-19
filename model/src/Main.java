@@ -15,5 +15,11 @@ public class Main {
         System.out.println(manager.getSalary()+" "+ manager.getName()+" "+manager.getSurname());
         manager.printInfo();
 
+        Group group = new Group();
+        group.addMembers(new Finance("semi","oupa", "new"));
+        group.addMembers(new Manager("12346", "sonya","kirk", 5678.90));
+
+        group.printGroup();
+
     }
 }
