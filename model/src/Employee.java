@@ -5,12 +5,13 @@ public abstract class Employee {
     private int age;
     private String role;
     private String email;
-    private String id;
+    private int id;
     public abstract void printInfo();
 
-    public Employee(String name, String surname) {
+    public Employee(String name, String surname, int id) {
         this.name = name;
         this.surname = surname;
+        this.id = id;
     }
 
     public String getName() {
@@ -53,11 +54,11 @@ public abstract class Employee {
         this.email = email;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

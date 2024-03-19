@@ -2,8 +2,8 @@ public class Manager extends Employee{
 
     private Double salary;
 
-    public Manager(String id, String name, String surname, Double salary) {
-        super(name, surname);
+    public Manager(int id, String name, String surname, Double salary) {
+        super(name, surname, id);
         this.salary =salary;
 
     }
@@ -20,4 +20,15 @@ public class Manager extends Employee{
     public void printInfo() {
         System.out.println("new manager created");
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + super.getName() + '\'' +
+                ", surname='" + super.getSurname() + '\'' +
+                ", salary=" + salary +
+                ", id=" + super.getId() +
+                '}';
+    }
+
 }

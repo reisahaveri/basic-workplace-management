@@ -2,8 +2,8 @@ public class Finance extends Employee{
 
     private String attribute1;
 
-    public Finance(String name, String surname, String attribute1) {
-        super(name, surname);
+    public Finance(String name, String surname, String attribute1, int id) {
+        super(name, surname, id);
         this.attribute1 = attribute1;
     }
 
@@ -20,4 +20,14 @@ public class Finance extends Employee{
         System.out.println("finance created");
 
     }
+
+    @Override
+    public String toString() {
+        return "Finance{" +
+                "name='" + super.getName() + '\'' +
+                ", surname='" + super.getSurname()+ '\'' +
+                ", status=" + attribute1 +
+                '}';
+    }
+
 }
